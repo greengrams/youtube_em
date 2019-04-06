@@ -9,7 +9,7 @@ function onYouTubeIframeAPIReady() {
 		var a = elmnt ? "6mG6rx9.png" : "ZXzo5T1.png";
 		list[i].t.setAttribute("src", "https://i.imgur.com/" + a);
 	};
-	sleep(500);
+	sleep(5000);
 	for (var i = 0; i < list.length; i++) {
 		var e = list[i];
 		e.t = document.createElement("img");
