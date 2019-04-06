@@ -1,9 +1,15 @@
+function sleep(miliseconds) {
+	var currentTime = new Date().getTime();
+	while (currentTime + miliseconds >= new Date().getTime()) {
+	}
+}
 function onYouTubeIframeAPIReady() {
 	var list = document.getElementsByClassName("youtube-audio");
 	var o = function (elmnt,i) {
 		var a = elmnt ? "6mG6rx9.png" : "ZXzo5T1.png";
 		list[i].t.setAttribute("src", "https://i.imgur.com/" + a);
 	};
+	sleep(500);
 	for (var i = 0; i < list.length; i++) {
 		var e = list[i];
 		e.t = document.createElement("img");
