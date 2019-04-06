@@ -22,11 +22,11 @@ function onYouTubeIframeAPIReady() {
 			height : "0",
 			width : "0",
 			videoId : e.dataset.video,
-			host: 'https://youtube.com',
+			host: 'https://www.youtube.com',
 			playerVars : {
-				'autoplay' : e.dataset.autoplay,
-				'loop' : e.dataset.loop,
-				'origin': window.location.href
+				autoplay : e.dataset.autoplay,
+				loop : e.dataset.loop,
+				origin : window.location.origin
 			},
 			events : {
 				onReady : function (elmnt) {
