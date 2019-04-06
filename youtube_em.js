@@ -1,7 +1,7 @@
 function onYouTubeIframeAPIReady() {
 	var list = document.getElementsByClassName("youtube-audio");
 	var o = function (elmnt,i) {
-		var a = elmnt ? "bcrQbe8.png" : "pzAitH7.png";
+		var a = elmnt ? "6mG6rx9.png" : "ZXzo5T1.png";
 		list[i].t.setAttribute("src", "https://i.imgur.com/" + a);
 	};
 	for (var i = 0; i < list.length; i++) {
