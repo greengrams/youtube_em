@@ -22,6 +22,7 @@ function onYouTubeIframeAPIReady() {
 			height : "0",
 			width : "0",
 			videoId : e.dataset.video,
+            host: 'https://www.youtube.com',
 			playerVars : {
 				autoplay : e.dataset.autoplay,
 				loop : e.dataset.loop,
