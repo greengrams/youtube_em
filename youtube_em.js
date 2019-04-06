@@ -24,7 +24,8 @@ function onYouTubeIframeAPIReady() {
 			videoId : e.dataset.video,
 			playerVars : {
 				autoplay : e.dataset.autoplay,
-				loop : e.dataset.loop
+				loop : e.dataset.loop,
+				origin: window.location
 			},
 			events : {
 				onReady : function (elmnt) {
