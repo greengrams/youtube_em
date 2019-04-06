@@ -23,10 +23,11 @@ function onYouTubeIframeAPIReady() {
 			width : "0",
 			videoId : e.dataset.video,
 			host: 'https://www.youtube.com',
+			origin : window.location.origin,
+			widget_referrer: window.location.origin,
 			playerVars : {
 				autoplay : e.dataset.autoplay,
 				loop : e.dataset.loop,
-				origin : window.location.origin
 			},
 			events : {
 				onReady : function (elmnt) {
