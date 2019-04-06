@@ -24,8 +24,9 @@ function onYouTubeIframeAPIReady() {
 			videoId : e.dataset.video,
 			host: 'https://www.youtube.com',
 			playerVars : {
-				autoplay : e.dataset.autoplay,
-				loop : e.dataset.loop
+				'autoplay' : e.dataset.autoplay,
+				'loop' : e.dataset.loop,
+				'origin': window.location.href
 			},
 			events : {
 				onReady : function (elmnt) {
